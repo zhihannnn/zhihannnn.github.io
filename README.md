@@ -2,7 +2,7 @@
 
 This repository hosts my personal academic website via GitHub Pages.
 
-Website: https://brunostrawberry.github.io
+Website: https://zhihannnn.github.io
 
 ## About
 
@@ -46,4 +46,5 @@ Sensitive personal information, referee details, transcripts, and private applic
 ## Contact
 
 Email: [ed.leo.strawberry@gmail.com](mailto:ed.leo.strawberry@gmail.com)
-GitHub: https://github.com/brunostrawberry
+GitHub: https://github.com/zhihannnn
+
