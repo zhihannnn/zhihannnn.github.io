@@ -137,6 +137,28 @@
         font-size: 2rem;
       }
     }
+
+    .project-images {
+display: grid;
+grid-template-columns: 1fr;
+gap: 16px;
+margin-top: 14px;
+}
+
+.project-images img {
+width: 100%;
+border: 1px solid var(--line);
+border-radius: 12px;
+background: #ffffff;
+box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+}
+
+.project-note {
+font-size: 0.95rem;
+color: var(--muted);
+margin-top: 8px;
+}
+
   </style>
 
 </head>
@@ -255,6 +277,42 @@
       </a>
     </p>
   </div>
+
+  <div class="item">
+  <h3>Python Reimplementation of Weighted Nearest Neighbor Analysis</h3>
+  <p class="muted">
+    Method reproduction project for multimodal single-cell RNA and ADT data integration
+  </p>
+
+  <p>
+    This project focuses on reproducing key components of the Seurat v4 Weighted Nearest Neighbor
+    workflow for multimodal single-cell data analysis. The implementation reconstructs major steps
+    including modality-specific preprocessing, nearest-neighbor graph construction, Jaccard/SNN-based
+    bandwidth estimation, cell-specific RNA/ADT modality weighting, weighted multimodal neighbor graph
+    construction, Leiden clustering, and UMAP visualization.
+  </p>
+
+  <p>
+    Through this project, I explored multimodal representation learning, graph-based integration,
+    adaptive modality weighting, and reproducible Python/R workflows for single-cell RNA and protein
+    data analysis. The Python implementation was cross-checked against manually exported R/Seurat
+    intermediate results to better understand the WNN algorithm step by step.
+  </p>
+
+  <div class="project-images">
+    <img src="assets/wnn/violin_rna_weight.png" alt="RNA modality weight by cell type" />
+    <img src="assets/wnn/wnn_umap.png" alt="WNN UMAP visualization and cell-type annotation" />
+  </div>
+
+  <p class="project-note">
+    The first plot shows cell-type-specific RNA modality weights, while the second plot compares
+    WNN-based Leiden clustering with reference cell-type annotations.
+  </p>
+
+  <p>
+    <strong>Status:</strong> Ongoing methodological reproduction project.
+  </p>
+</div>
 </section>
     
 <section>
